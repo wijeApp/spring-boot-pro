@@ -1,6 +1,10 @@
-INSERT INTO LAPTOP (TITLE, DESCRIPTION, IMAGE_URL, PRICE) VALUES
-('Dell XPS 13', '13-inch, Intel i7, 16GB RAM, 512GB SSD', 'https://example.com/xps13.jpg', 1299.99),
-('Apple MacBook Air', '13-inch, M2 chip, 8GB RAM, 256GB SSD', 'https://example.com/macbookair.jpg', 1099.99),
-('HP Spectre x360', '14-inch, Intel i5, 8GB RAM, 512GB SSD', 'https://example.com/spectrex360.jpg', 1199.99),
-('Lenovo ThinkPad X1', '14-inch, Intel i7, 16GB RAM, 1TB SSD', 'https://example.com/thinkpadx1.jpg', 1499.99),
-('Asus ZenBook 14', '14-inch, AMD Ryzen 7, 16GB RAM, 512GB SSD', 'https://example.com/zenbook14.jpg', 999.99);
+INSERT INTO laptop (id, brand, model, price, ram, storage, image_url) VALUES (1, 'Dell', 'XPS 13', 1200.00, 16, 512, 'images/dell_xps13.jpg');
+INSERT INTO laptop (id, brand, model, price, ram, storage, image_url) VALUES (2, 'Apple', 'MacBook Air', 999.00, 8, 256, 'images/macbook_air.jpg');
+INSERT INTO laptop (id, brand, model, price, ram, storage, image_url) VALUES (3, 'HP', 'Spectre x360', 1300.00, 16, 512, 'images/hp_spectre.jpg');
+INSERT INTO laptop (id, brand, model, price, ram, storage, image_url) VALUES (4, 'Lenovo', 'ThinkPad X1', 1400.00, 16, 1024, 'images/lenovo_x1.jpg');
+INSERT INTO laptop (id, brand, model, price, ram, storage, image_url) VALUES (5, 'Asus', 'ZenBook 14', 1100.00, 16, 512, 'images/asus_zenbook.jpg');
+INSERT INTO laptop (id, brand, model, price, ram, storage, image_url) VALUES (6, 'Acer', 'Swift 3', 850.00, 8, 256, 'images/acer_swift3.jpg');
+INSERT INTO laptop (id, brand, model, price, ram, storage, image_url) VALUES (7, 'Microsoft', 'Surface Laptop 4', 1250.00, 16, 512, 'images/surface_laptop4.jpg');
+INSERT INTO laptop (id, brand, model, price, ram, storage, image_url) VALUES (8, 'Razer', 'Blade Stealth', 1500.00, 16, 512, 'images/razer_blade.jpg');
+INSERT INTO laptop (id, brand, model, price, ram, storage, image_url) VALUES (9, 'MSI', 'Prestige 14', 1350.00, 16, 512, 'images/msi_prestige.jpg');
+INSERT INTO laptop (id, brand, model, price, ram, storage, image_url) VALUES (10, 'Samsung', 'Galaxy Book Pro', 1150.00, 8, 512, 'images/samsung_galaxybook.jpg');

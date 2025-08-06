@@ -4,32 +4,84 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "LAPTOP")
 public class Laptop {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String title;
-    private String description;
+    private String brand;
+    private String model;
+    private double price;
+    private int ram;
+    private int storage;
     private String imageUrl;
-    private Double price;
 
-    // Getters and setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public Laptop() {}
 
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
+    public Laptop(Long id, String brand, String model, double price, int ram, int storage, String imageUrl) {
+        this.id = id;
+        this.brand = brand;
+        this.model = model;
+        this.price = price;
+        this.ram = ram;
+        this.storage = storage;
+        this.imageUrl = imageUrl;
+    }
 
-    public String getDescription() { return description; }
-    public void setDescription(String description) { this.description = description; }
+    public Long getId() {
+        return id;
+    }
 
-    public String getImageUrl() { return imageUrl; }
-    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public Double getPrice() { return price; }
-    public void setPrice(Double price) { this.price = price; }
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public int getRam() {
+        return ram;
+    }
+
+    public void setRam(int ram) {
+        this.ram = ram;
+    }
+
+    public int getStorage() {
+        return storage;
+    }
+
+    public void setStorage(int storage) {
+        this.storage = storage;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 }
